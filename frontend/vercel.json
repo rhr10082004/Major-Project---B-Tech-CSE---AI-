@@ -1,9 +1,0 @@
-{
-  "functions": {
-    "api/[...path].js": {
-      "includeFiles": [
-        "../backend/**"
-      ]
-    }
-  }
-}
