@@ -52,8 +52,43 @@ const defaultAssessmentQuestions: MCQ[] = [
     options: ['TCP', 'UDP', 'DNS', 'HTTP'],
     answer: 'TCP',
     explanation: 'TCP establishes a connection and uses acknowledgements and sequencing for reliable delivery.'
+  },
+  {
+    id: 4,
+    question: 'What is the time complexity of binary search on a sorted array?',
+    options: ['O(log n)', 'O(n)', 'O(n log n)', 'O(1)'],
+    answer: 'O(log n)',
+    explanation: 'Binary search halves the remaining search range after each comparison.'
+  },
+  {
+    id: 5,
+    question: 'Which operating system component decides which process gets CPU time next?',
+    options: ['CPU scheduler', 'File system', 'Device driver', 'Linker'],
+    answer: 'CPU scheduler',
+    explanation: 'The CPU scheduler selects the next runnable process according to the scheduling policy.'
+  },
+  {
+    id: 6,
+    question: 'Which principle keeps a class focused on one responsibility?',
+    options: ['Single Responsibility Principle', 'Open/Closed Principle', 'Liskov Substitution Principle', 'Dependency Inversion Principle'],
+    answer: 'Single Responsibility Principle',
+    explanation: 'The Single Responsibility Principle gives a class one reason to change.'
   }
 ];
+
+const shuffle = <T,>(items: T[]): T[] => {
+  const shuffled = [...items];
+  for (let i = shuffled.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+};
+
+const createAssessmentAttempt = (questions: MCQ[]): MCQ[] =>
+  shuffle(questions)
+    .slice(0, Math.min(5, questions.length))
+    .map((question) => ({ ...question, options: shuffle(question.options) }));
 
 interface StudentDashboardProps {
   user: User | null;
@@ -125,7 +160,8 @@ export const StudentDashboard: React.FC<StudentDashboardProps> = ({ user, onLogo
 
   // MCQ state
   const [mcqDifficulty, setMcqDifficulty] = useState('Medium');
-  const [currentMcqs, setCurrentMcqs] = useState<MCQ[]>(defaultAssessmentQuestions);
+  const [assessmentBank, setAssessmentBank] = useState<MCQ[]>(defaultAssessmentQuestions);
+  const [currentMcqs, setCurrentMcqs] = useState<MCQ[]>(() => createAssessmentAttempt(defaultAssessmentQuestions));
   const [selectedAnswers, setSelectedAnswers] = useState<Record<number, string>>({});
   const [quizSubmitted, setQuizSubmitted] = useState(false);
   const [quizScore, setQuizScore] = useState<number | null>(null);
@@ -173,7 +209,10 @@ export const StudentDashboard: React.FC<StudentDashboardProps> = ({ user, onLogo
       if (res.data?.recent_lectures?.length) {
         setRecentLectures(res.data.recent_lectures);
         setSelectedLecture(res.data.recent_lectures[0]);
-        if (res.data.recent_lectures[0].mcqs?.length) setCurrentMcqs(res.data.recent_lectures[0].mcqs);
+        if (res.data.recent_lectures[0].mcqs?.length) {
+          setAssessmentBank(res.data.recent_lectures[0].mcqs);
+          setCurrentMcqs(createAssessmentAttempt(res.data.recent_lectures[0].mcqs));
+        }
       }
     } catch (err) {
       console.log('Using simulated offline demo dashboard data');
@@ -270,7 +309,10 @@ export const StudentDashboard: React.FC<StudentDashboardProps> = ({ user, onLogo
         setSelectedLecture(newLec);
         setRecentLectures([newLec, ...recentLectures]);
         setStats({ ...stats, lectures: stats.lectures + 1, notes: stats.notes + (newLec.detailedNotes?.length || 4) });
-        if (newLec.mcqs?.length) setCurrentMcqs(newLec.mcqs);
+        if (newLec.mcqs?.length) {
+          setAssessmentBank(newLec.mcqs);
+          setCurrentMcqs(createAssessmentAttempt(newLec.mcqs));
+        }
       }
     } catch {
       clearInterval(stageTimer);
@@ -1229,7 +1271,7 @@ export const StudentDashboard: React.FC<StudentDashboardProps> = ({ user, onLogo
                   Submit Assessment 🚀 🏆
                 </button>
               ) : (
-                <button onClick={() => { setQuizSubmitted(false); setSelectedAnswers({}); setQuizScore(null); }} className="rounded-2xl bg-gradient-to-r from-cyan-500 to-indigo-600 px-6 py-3.5 text-xs font-black text-white hover:opacity-95 transition transform active:scale-95 shadow-md">
+                <button onClick={() => { setQuizSubmitted(false); setSelectedAnswers({}); setQuizScore(null); setCurrentMcqs(createAssessmentAttempt(assessmentBank)); }} className="rounded-2xl bg-gradient-to-r from-cyan-500 to-indigo-600 px-6 py-3.5 text-xs font-black text-white hover:opacity-95 transition transform active:scale-95 shadow-md">
                   Retake Assessment 🔄 💫
                 </button>
               )}
