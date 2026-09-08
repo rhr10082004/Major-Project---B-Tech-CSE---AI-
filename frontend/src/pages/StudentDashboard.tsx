@@ -30,6 +30,30 @@ const publicVideoCatalog: YoutubeVideo[] = [
   { videoId: '8JJ101D3knE', title: 'Git and GitHub for Beginners', channel: 'Programming with Mosh', duration: '1:09:00', views: '10M views', description: 'Version control, branching, merging, and collaboration.' }
 ];
 
+const defaultAssessmentQuestions: MCQ[] = [
+  {
+    id: 1,
+    question: 'Which data structure provides average O(1) lookup time for key-value pairs?',
+    options: ['Hash table', 'Linked list', 'Binary tree without balancing', 'Stack'],
+    answer: 'Hash table',
+    explanation: 'Hash tables use a hash function to locate values directly by key on average.'
+  },
+  {
+    id: 2,
+    question: 'Which technique stores results of overlapping subproblems to improve an algorithm?',
+    options: ['Dynamic programming', 'Depth-first search', 'Binary encoding', 'Round-robin scheduling'],
+    answer: 'Dynamic programming',
+    explanation: 'Dynamic programming combines memoization or tabulation with optimal substructure.'
+  },
+  {
+    id: 3,
+    question: 'Which protocol is connection-oriented and provides reliable ordered delivery?',
+    options: ['TCP', 'UDP', 'DNS', 'HTTP'],
+    answer: 'TCP',
+    explanation: 'TCP establishes a connection and uses acknowledgements and sequencing for reliable delivery.'
+  }
+];
+
 interface StudentDashboardProps {
   user: User | null;
   onLogout: () => void;
@@ -100,7 +124,7 @@ export const StudentDashboard: React.FC<StudentDashboardProps> = ({ user, onLogo
 
   // MCQ state
   const [mcqDifficulty, setMcqDifficulty] = useState('Medium');
-  const [currentMcqs, setCurrentMcqs] = useState<MCQ[]>([]);
+  const [currentMcqs, setCurrentMcqs] = useState<MCQ[]>(defaultAssessmentQuestions);
   const [selectedAnswers, setSelectedAnswers] = useState<Record<number, string>>({});
   const [quizSubmitted, setQuizSubmitted] = useState(false);
   const [quizScore, setQuizScore] = useState<number | null>(null);
@@ -144,7 +168,7 @@ export const StudentDashboard: React.FC<StudentDashboardProps> = ({ user, onLogo
       if (res.data?.recent_lectures?.length) {
         setRecentLectures(res.data.recent_lectures);
         setSelectedLecture(res.data.recent_lectures[0]);
-        if (res.data.recent_lectures[0].mcqs) setCurrentMcqs(res.data.recent_lectures[0].mcqs);
+        if (res.data.recent_lectures[0].mcqs?.length) setCurrentMcqs(res.data.recent_lectures[0].mcqs);
       }
     } catch (err) {
       console.log('Using simulated offline demo dashboard data');
@@ -227,7 +251,7 @@ export const StudentDashboard: React.FC<StudentDashboardProps> = ({ user, onLogo
         setSelectedLecture(newLec);
         setRecentLectures([newLec, ...recentLectures]);
         setStats({ ...stats, lectures: stats.lectures + 1, notes: stats.notes + (newLec.detailedNotes?.length || 4) });
-        if (newLec.mcqs) setCurrentMcqs(newLec.mcqs);
+        if (newLec.mcqs?.length) setCurrentMcqs(newLec.mcqs);
       }
     } catch {
       clearInterval(stageTimer);
