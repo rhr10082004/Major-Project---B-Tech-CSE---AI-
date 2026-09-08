@@ -290,7 +290,8 @@ export const StudentDashboard: React.FC<StudentDashboardProps> = ({ user, onLogo
         const searchableText = `${video.title} ${video.channel} ${video.description}`.toLowerCase();
         return terms.some((term) => searchableText.includes(term));
       });
-      setYtResults((matchingVideos.length ? matchingVideos : publicVideoCatalog).slice(0, 12));
+      const isDefaultQuery = queryToUse === 'machine learning engineering';
+      setYtResults((isDefaultQuery ? publicVideoCatalog : (matchingVideos.length ? matchingVideos : publicVideoCatalog)).slice(0, 12));
     }
   };
 
