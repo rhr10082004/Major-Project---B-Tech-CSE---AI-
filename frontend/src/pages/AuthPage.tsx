@@ -39,7 +39,11 @@ export const AuthPage: React.FC<AuthPageProps> = ({ mode, onAuthSuccess }) => {
         }
       }
     } catch (err: any) {
-      setError(err.response?.data?.error || 'Authentication failed. Please verify server is running on port 5010.');
+      const responseError = err?.response?.data?.error;
+      const message = typeof responseError === 'string'
+        ? responseError
+        : responseError?.message || err?.message;
+      setError(message || 'Authentication failed. Please try again.');
     } finally {
       setLoading(false);
     }
