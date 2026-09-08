@@ -1,7 +1,11 @@
 import axios from 'axios';
 
-export const API_BASE_URL = (import.meta as any).env?.VITE_API_URL || '';
-export const AI_BASE_URL = (import.meta as any).env?.VITE_AI_URL || '';
+const configuredApiUrl = (import.meta as any).env?.VITE_API_URL || '';
+const configuredAiUrl = (import.meta as any).env?.VITE_AI_URL || '';
+
+// Keep the public Vercel deployment self-contained when an old external host is unavailable.
+export const API_BASE_URL = configuredApiUrl.includes('onrender.com') ? '' : configuredApiUrl;
+export const AI_BASE_URL = configuredAiUrl.includes('onrender.com') ? '' : configuredAiUrl;
 
 export const api = axios.create({
   baseURL: API_BASE_URL,
