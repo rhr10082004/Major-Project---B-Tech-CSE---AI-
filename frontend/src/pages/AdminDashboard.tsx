@@ -20,7 +20,11 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ user, onLogout }
   const loadAdminMetrics = async () => {
     try {
       const res = await studyApi.getAdminMetrics();
-      if (res.data?.logs && Array.isArray(res.data.logs)) setMetrics(res.data);
+      if (res.data?.logs && Array.isArray(res.data.logs)) {
+        setMetrics(res.data);
+      } else {
+        throw new Error('Admin metrics service returned an invalid response');
+      }
     } catch {
       setMetrics({
         users_total: 1246,

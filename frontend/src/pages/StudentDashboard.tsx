@@ -165,7 +165,11 @@ export const StudentDashboard: React.FC<StudentDashboardProps> = ({ user, onLogo
     setLoadingStats(true);
     try {
       const res = await studyApi.getDashboard();
-      if (res.data?.stats) setStats(res.data.stats);
+      if (res.data?.stats) {
+        setStats(res.data.stats);
+      } else {
+        throw new Error('Dashboard service returned an invalid response');
+      }
       if (res.data?.recent_lectures?.length) {
         setRecentLectures(res.data.recent_lectures);
         setSelectedLecture(res.data.recent_lectures[0]);

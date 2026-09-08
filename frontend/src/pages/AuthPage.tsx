@@ -30,13 +30,13 @@ export const AuthPage: React.FC<AuthPageProps> = ({ mode, onAuthSuccess }) => {
         if (res.data?.token && res.data?.user) {
           onAuthSuccess(res.data.token, res.data.user);
           navigate(`/${res.data.user.role.toLowerCase()}-dashboard`);
-        }
+        } else throw new Error('Authentication service is unavailable');
       } else {
         const res = await authApi.signup({ name, email, password, role });
         if (res.data?.token && res.data?.user) {
           onAuthSuccess(res.data.token, res.data.user);
           navigate(`/${res.data.user.role.toLowerCase()}-dashboard`);
-        }
+        } else throw new Error('Authentication service is unavailable');
       }
     } catch (err: any) {
       const demoUsers: Record<string, User> = {
