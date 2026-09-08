@@ -22,7 +22,7 @@
 
 ### 🧾 Latest Upload
 
-[View the latest GitHub commit](https://github.com/rhr10082004/Major-Project---B-Tech-CSE---AI-/commit/29ecb77)
+[View the latest GitHub commit](https://github.com/rhr10082004/Major-Project---B-Tech-CSE---AI-/commit/cf2cb4f39863156609fe27ebdd0dd3d0cf40f15e)
 
 ## 1. Project overview
 
