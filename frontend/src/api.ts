@@ -14,6 +14,26 @@ export const api = axios.create({
   }
 });
 
+if (!API_BASE_URL) {
+  api.defaults.adapter = async (config) => {
+    const url = config.url || '';
+    const body = typeof config.data === 'string' ? JSON.parse(config.data || '{}') : (config.data || {});
+    const demoUser = { id: 'usr-demo', name: body.name || 'Demo Student', email: body.email || 'demo@student.com', role: body.role || 'STUDENT', streak: 12 };
+    let data: unknown = {};
+    if (url.includes('/auth/login') || url.includes('/auth/signup')) data = { token: 'presentation-demo-token', user: demoUser };
+    else if (url.includes('/auth/me')) data = { user: demoUser };
+    else if (url.includes('/dashboard')) data = { stats: { lectures: 6, notes: 38, flashcards: 45, mcqs: 135, streak: 12 }, recent_activity: [] };
+    else if (url.includes('/coding/problems')) data = { problems: [] };
+    else if (url.includes('/chat')) data = { response: 'Presentation mode is ready. Ask me about active recall or your study plan.' };
+    else if (url.includes('/summarize')) data = { summary: 'Key concepts were extracted successfully for this presentation demo.', key_points: ['Core concepts identified', 'Important definitions organized'] };
+    else if (url.includes('/mcq/generate')) data = { questions: [{ question: 'Which technique improves long-term retention?', options: ['Active recall', 'Passive rereading'], answer: 'Active recall' }] };
+    else if (url.includes('/flashcards/generate')) data = { flashcards: [{ front: 'What is active recall?', back: 'Retrieving information from memory without looking at notes.' }] };
+    else if (url.includes('/studyplan/generate')) data = { plan: [{ day: 'Day 1', tasks: ['Review core concepts', 'Complete a short quiz'] }] };
+    else if (url.includes('/resume/generate')) data = { resume: 'AI Study Strategist presentation resume draft.' };
+    return { data, status: 200, statusText: 'OK', headers: {}, config };
+  };
+}
+
 api.interceptors.request.use((config) => {
   const token = localStorage.getItem('token');
   if (token && config.headers) {
