@@ -848,8 +848,8 @@ app.get('/api/youtube/search', async (req, res) => {
     const q = (req.query.q || 'machine learning engineering').toString();
     const r = await ytSearch(q);
     
-    // Extract top 9 videos for our theater grid
-    const videos = r.videos.slice(0, 9).map(v => {
+    // Extract a larger catalog for the theater grid and search experience
+    const videos = r.videos.slice(0, 24).map(v => {
       let viewCountStr = 'N/A views';
       if (v.views) {
         if (v.views >= 1000000) {

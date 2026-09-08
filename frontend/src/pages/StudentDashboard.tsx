@@ -11,6 +11,25 @@ import { User, Lecture, Flashcard, MCQ, YoutubeVideo, LeetCodeProfile, StudyPlan
 import { studyApi } from '../api';
 import { useTheme } from '../context/ThemeContext';
 
+const publicVideoCatalog: YoutubeVideo[] = [
+  { videoId: 'kCc8FmRoS0j', title: 'Deep Learning and Transformers', channel: 'Stanford Online', duration: '48:15', views: '240K views', description: 'Self-attention, transformers, and modern machine learning.' },
+  { videoId: 'aircAruvnKk', title: 'Neural Networks Explained Visually', channel: '3Blue1Brown', duration: '20:42', views: '1.2M views', description: 'A visual introduction to neural networks and gradient descent.' },
+  { videoId: 'rfscVS0vtbw', title: 'Python Programming Course', channel: ' freeCodeCamp.org', duration: '4:26:52', views: '38M views', description: 'Complete Python programming course for beginners.' },
+  { videoId: 'zOj9cS7YhXQ', title: 'Data Structures and Algorithms', channel: 'freeCodeCamp.org', duration: '5:00:00', views: '2.8M views', description: 'Algorithms, complexity, arrays, trees, and graphs.' },
+  { videoId: 'RBSGKlAvoiM', title: 'Data Structures Easy to Advanced', channel: 'freeCodeCamp.org', duration: '8:03:50', views: '6.4M views', description: 'A complete data structures learning path.' },
+  { videoId: 'WUvTyaaNkzM', title: 'Dynamic Programming Full Course', channel: 'William Fiset', duration: '1:45:00', views: '1.1M views', description: 'Memoization, tabulation, and optimization techniques.' },
+  { videoId: 'TzeBrDU-JaY', title: 'Operating Systems Course', channel: 'Neso Academy', duration: '3:12:00', views: '4.1M views', description: 'Processes, memory, scheduling, and file systems.' },
+  { videoId: 'F8Zs8E4P2b4', title: 'Computer Networks Complete Course', channel: 'Gate Smashers', duration: '2:40:00', views: '3.6M views', description: 'Networking fundamentals, TCP/IP, and protocols.' },
+  { videoId: 'M4l3D4rJQ9U', title: 'System Design Interview Course', channel: 'Gaurav Sen', duration: '2:15:00', views: '2.2M views', description: 'Scalable systems, caching, databases, and architecture.' },
+  { videoId: 'h4RkKJ8v7XQ', title: 'MongoDB Tutorial for Beginners', channel: 'Programming with Mosh', duration: '1:02:00', views: '5.8M views', description: 'Documents, collections, queries, and aggregation.' },
+  { videoId: 'eIrMbAQSU34', title: 'Java Programming for Beginners', channel: 'Programming with Mosh', duration: '2:25:00', views: '12M views', description: 'Java syntax, object-oriented programming, and projects.' },
+  { videoId: 'zJ-LqeX_fLU', title: 'JavaScript Full Course', channel: 'freeCodeCamp.org', duration: '3:40:00', views: '9.4M views', description: 'Modern JavaScript fundamentals and browser development.' },
+  { videoId: 'UB1O30fR-EE', title: 'React JS Course', channel: 'Programming with Mosh', duration: '1:48:00', views: '4.8M views', description: 'React components, state, hooks, and application architecture.' },
+  { videoId: 'Oe421EPjeBE', title: 'Node.js and Express Tutorial', channel: 'freeCodeCamp.org', duration: '8:16:00', views: '3.2M views', description: 'Build REST APIs with Node.js and Express.' },
+  { videoId: 'qiQR5rTSshw', title: 'Docker and Kubernetes Course', channel: 'freeCodeCamp.org', duration: '5:27:00', views: '3.9M views', description: 'Containers, images, orchestration, and deployment.' },
+  { videoId: '8JJ101D3knE', title: 'Git and GitHub for Beginners', channel: 'Programming with Mosh', duration: '1:09:00', views: '10M views', description: 'Version control, branching, merging, and collaboration.' }
+];
+
 interface StudentDashboardProps {
   user: User | null;
   onLogout: () => void;
@@ -266,10 +285,12 @@ export const StudentDashboard: React.FC<StudentDashboardProps> = ({ user, onLogo
       const res = await studyApi.searchYoutube(queryToUse);
       if (res.data?.results) setYtResults(res.data.results);
     } catch {
-      setYtResults([
-        { videoId: 'kCc8FmRoS0j', title: `Stanford Deep Dive into ${queryToUse} 👑`, channel: 'University Engineering 🏛️', duration: '48:15', views: '240K views', description: 'Architectural analysis of sequence attention models and computational pipelines ✨.' },
-        { videoId: 'aircAruvnKk', title: `Neural Networks & ${queryToUse} Explained Visually 🌈`, channel: '3Blue1Brown Engineering 💎', duration: '20:42', views: '1.2M views', description: 'Geometric visualization of mathematical gradient descent and perceptron training 🚀.' }
-      ]);
+      const terms = queryToUse.toLowerCase().split(/\s+/).filter(Boolean);
+      const matchingVideos = publicVideoCatalog.filter((video) => {
+        const searchableText = `${video.title} ${video.channel} ${video.description}`.toLowerCase();
+        return terms.some((term) => searchableText.includes(term));
+      });
+      setYtResults((matchingVideos.length ? matchingVideos : publicVideoCatalog).slice(0, 12));
     }
   };
 
