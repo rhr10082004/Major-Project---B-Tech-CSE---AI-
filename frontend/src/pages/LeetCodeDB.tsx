@@ -27,6 +27,7 @@ export const LeetCodeDB: React.FC = () => {
       setProblems(offlineProblems
         .map((p) => ({
           problemId: Number(p.id.replace('lc-', '')),
+          platform: p.platform || 'LeetCode',
           title: p.title,
           slug: p.title.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
           difficulty: p.difficulty,
@@ -85,6 +86,7 @@ export const LeetCodeDB: React.FC = () => {
               <tr>
                 <th className="p-4">ID</th>
                 <th className="p-4">Title</th>
+                <th className="p-4">Platform</th>
                 <th className="p-4">Difficulty</th>
                 <th className="p-4">Topics</th>
               </tr>
@@ -98,6 +100,11 @@ export const LeetCodeDB: React.FC = () => {
                 >
                   <td className="p-4">{p.problemId}</td>
                   <td className="p-4 font-medium text-blue-600 dark:text-blue-400">{p.title}</td>
+                  <td className="p-4">
+                    <span className="px-2 py-1 text-xs rounded-full bg-indigo-100 text-indigo-800 dark:bg-indigo-900/50 dark:text-indigo-200">
+                      {p.platform || 'LeetCode'}
+                    </span>
+                  </td>
                   <td className="p-4">
                     <span className={`px-2 py-1 text-xs rounded-full ${
                       p.difficulty === 'Easy' ? 'bg-green-100 text-green-800' :

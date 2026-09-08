@@ -4,6 +4,7 @@ import Editor from '@monaco-editor/react';
 import axios from 'axios';
 import { useTheme } from '../context/ThemeContext';
 import { API_BASE_URL, AI_BASE_URL } from '../api';
+import offlineProblems from '../data/leetcode_problems.json';
 
 export const CodeWorkspace: React.FC = () => {
   const { slug } = useParams();
@@ -43,7 +44,25 @@ export const CodeWorkspace: React.FC = () => {
       const stub = res.data.problem.starterCode?.[language] || getDefaultStub(language, res.data.problem);
       setCode(stub);
     } catch (err) {
-      console.error(err);
+      const offlineProblem = offlineProblems.find((candidate) =>
+        candidate.title.toLowerCase().replace(/[^a-z0-9]+/g, '-') === slug
+      );
+      if (offlineProblem) {
+        const normalizedProblem = {
+          ...offlineProblem,
+          problemId: Number(offlineProblem.id.replace('lc-', '')),
+          platform: offlineProblem.platform || 'LeetCode',
+          slug,
+          examples: offlineProblem.testCases?.slice(0, 2).map((testCase) => ({
+            input: testCase.input,
+            output: testCase.expectedOutput
+          }))
+        };
+        setProblem(normalizedProblem);
+        setCode(normalizedProblem.starterCode?.[language] || getDefaultStub(language, normalizedProblem));
+      } else {
+        console.error(err);
+      }
     }
     setLoading(false);
   };
@@ -74,7 +93,11 @@ export const CodeWorkspace: React.FC = () => {
       });
       setRunResult(res.data);
     } catch (err: any) {
-      setRunResult({ status: 'Error', output: null, error: err.response?.data?.error || err.message });
+      setRunResult({
+        status: 'Unavailable',
+        output: 'Your code is ready in the editor. Live execution requires the coding backend to be online.',
+        error: err.response?.data?.error || err.message
+      });
     }
     setIsRunning(false);
   };
@@ -104,7 +127,11 @@ export const CodeWorkspace: React.FC = () => {
          triggerAiReview(res.data.submission.status, res.data.error || 'Wrong Answer');
       }
     } catch (err: any) {
-      setRunResult({ status: 'System Error', output: null, error: err.response?.data?.error || err.message });
+      setRunResult({
+        status: 'Unavailable',
+        output: 'Your solution is ready. Submission requires the coding backend to be online.',
+        error: err.response?.data?.error || err.message
+      });
     }
     setIsSubmitting(false);
   };
@@ -150,7 +177,8 @@ export const CodeWorkspace: React.FC = () => {
         <div className="flex items-center gap-4">
           <button onClick={() => navigate('/leetcode')} className="font-bold hover:text-blue-500 transition">&larr; DB</button>
           <div className="flex items-center gap-2">
-            <span className={`px-2 py-0.5 text-xs font-bold rounded ${problem.difficulty === 'Easy' ? 'text-green-500 bg-green-500/10' : problem.difficulty === 'Medium' ? 'text-yellow-500 bg-yellow-500/10' : 'text-red-500 bg-red-500/10'}`}>{problem.difficulty}</span>
+          <span className="px-2 py-0.5 text-xs font-bold rounded text-indigo-500 bg-indigo-500/10">{problem.platform || 'LeetCode'}</span>
+          <span className={`px-2 py-0.5 text-xs font-bold rounded ${problem.difficulty === 'Easy' ? 'text-green-500 bg-green-500/10' : problem.difficulty === 'Medium' ? 'text-yellow-500 bg-yellow-500/10' : 'text-red-500 bg-red-500/10'}`}>{problem.difficulty}</span>
             <h1 className="font-bold">{problem.problemId}. {problem.title}</h1>
           </div>
         </div>
@@ -170,7 +198,12 @@ export const CodeWorkspace: React.FC = () => {
         {/* Left Panel: Description */}
         <div className={`w-[30%] min-w-[300px] border-r overflow-y-auto p-6 ${isDark ? 'border-gray-800 bg-[#1e1e1e]/50' : 'border-gray-200 bg-gray-50'}`}>
           <div className="prose dark:prose-invert max-w-none text-sm">
-            <div dangerouslySetInnerHTML={{ __html: problem.description }} />
+          <div className="mb-4 flex items-center gap-2 text-xs font-bold uppercase tracking-wide text-indigo-500">
+            <span>{problem.platform || 'LeetCode'}</span>
+            <span>•</span>
+            <span>{problem.difficulty}</span>
+          </div>
+          <div dangerouslySetInnerHTML={{ __html: problem.description }} />
             
             {problem.examples?.length > 0 && (
               <div className="mt-8">
