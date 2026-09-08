@@ -1,6 +1,6 @@
 {
   "private": true,
   "scripts": {
-    "build": "npm --prefix frontend install && npm --prefix frontend run build && rm -rf dist && mkdir -p dist && cp -R frontend/dist/. dist/"
+    "build": "npm --prefix frontend install --no-audit && npm --prefix frontend run build && rm -rf dist && mkdir -p dist && cp -R frontend/dist/. dist/"
   }
 }
