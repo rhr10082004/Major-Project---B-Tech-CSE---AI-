@@ -1,0 +1,1426 @@
+[
+  {
+    "id": "lc-1",
+    "platform": "LeetCode",
+    "title": "Two Sum",
+    "difficulty": "Easy",
+    "topic": "Arrays & Hashing",
+    "description": "<p>Given an array of integers <code>nums</code> and an integer <code>target</code>, return indices of the two numbers such that they add up to <code>target</code>.</p>",
+    "starterCode": {
+      "python": "def two_sum(nums, target):\n    # Write your code here\n    pass\n",
+      "javascript": "function twoSum(nums, target) {\n    // Write your code here\n}\n"
+    },
+    "testCases": [
+      {
+        "input": "[2, 7, 11, 15]\\n9",
+        "expectedOutput": "[0, 1]"
+      },
+      {
+        "input": "[3, 2, 4]\\n6",
+        "expectedOutput": "[1, 2]"
+      },
+      {
+        "input": "[3, 3]\\n6",
+        "expectedOutput": "[0, 1]"
+      }
+    ]
+  },
+  {
+    "id": "lc-20",
+    "platform": "LeetCode",
+    "title": "Valid Parentheses",
+    "difficulty": "Easy",
+    "topic": "Stack",
+    "description": "<p>Given a string <code>s</code> containing just the characters <code>'('</code>, <code>')'</code>, <code>'{'</code>, <code>'}'</code>, <code>'['</code> and <code>']'</code>, determine if the input string is valid.</p>",
+    "starterCode": {
+      "python": "def is_valid(s):\n    # Write your code here\n    pass\n",
+      "javascript": "function isValid(s) {\n    // Write your code here\n}\n"
+    },
+    "testCases": [
+      {
+        "input": "\"()\"",
+        "expectedOutput": "true"
+      },
+      {
+        "input": "\"()[]{}\"",
+        "expectedOutput": "true"
+      },
+      {
+        "input": "\"(]\"",
+        "expectedOutput": "false"
+      }
+    ]
+  },
+  {
+    "id": "lc-2",
+    "platform": "LeetCode",
+    "title": "Add Two Numbers",
+    "difficulty": "Medium",
+    "topic": "Linked List, Math, Recursion",
+    "description": "<p>Please solve <b>Add Two Numbers</b>.</p><p><a href=\"https://leetcode.com/problems/add-two-numbers\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Add Two Numbers\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Add Two Numbers\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Add Two Numbers\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-3",
+    "platform": "LeetCode",
+    "title": "Longest Substring Without Repeating Characters",
+    "difficulty": "Medium",
+    "topic": "Hash Table, String, Sliding Window",
+    "description": "<p>Please solve <b>Longest Substring Without Repeating Characters</b>.</p><p><a href=\"https://leetcode.com/problems/longest-substring-without-repeating-characters\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Longest Substring Without Repeating Characters\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Longest Substring Without Repeating Characters\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Longest Substring Without Repeating Characters\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-4",
+    "platform": "LeetCode",
+    "title": "Median of Two Sorted Arrays",
+    "difficulty": "Hard",
+    "topic": "Array, Binary Search, Divide and Conquer",
+    "description": "<p>Please solve <b>Median of Two Sorted Arrays</b>.</p><p><a href=\"https://leetcode.com/problems/median-of-two-sorted-arrays\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Median of Two Sorted Arrays\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Median of Two Sorted Arrays\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Median of Two Sorted Arrays\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-5",
+    "platform": "LeetCode",
+    "title": "Longest Palindromic Substring",
+    "difficulty": "Medium",
+    "topic": "Two Pointers, String, Dynamic Programming, Manacher",
+    "description": "<p>Please solve <b>Longest Palindromic Substring</b>.</p><p><a href=\"https://leetcode.com/problems/longest-palindromic-substring\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Longest Palindromic Substring\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Longest Palindromic Substring\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Longest Palindromic Substring\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-6",
+    "platform": "LeetCode",
+    "title": "Zigzag Conversion",
+    "difficulty": "Medium",
+    "topic": "String",
+    "description": "<p>Please solve <b>Zigzag Conversion</b>.</p><p><a href=\"https://leetcode.com/problems/zigzag-conversion\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Zigzag Conversion\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Zigzag Conversion\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Zigzag Conversion\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-7",
+    "platform": "LeetCode",
+    "title": "Reverse Integer",
+    "difficulty": "Medium",
+    "topic": "Math",
+    "description": "<p>Please solve <b>Reverse Integer</b>.</p><p><a href=\"https://leetcode.com/problems/reverse-integer\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Reverse Integer\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Reverse Integer\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Reverse Integer\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-8",
+    "platform": "LeetCode",
+    "title": "String to Integer (atoi)",
+    "difficulty": "Medium",
+    "topic": "String",
+    "description": "<p>Please solve <b>String to Integer (atoi)</b>.</p><p><a href=\"https://leetcode.com/problems/string-to-integer-atoi\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement String to Integer (atoi)\n    pass\n",
+      "javascript": "function solve() {\n    // Implement String to Integer (atoi)\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement String to Integer (atoi)\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-9",
+    "platform": "LeetCode",
+    "title": "Palindrome Number",
+    "difficulty": "Easy",
+    "topic": "Math",
+    "description": "<p>Please solve <b>Palindrome Number</b>.</p><p><a href=\"https://leetcode.com/problems/palindrome-number\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Palindrome Number\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Palindrome Number\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Palindrome Number\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-10",
+    "platform": "LeetCode",
+    "title": "Regular Expression Matching",
+    "difficulty": "Hard",
+    "topic": "String, Dynamic Programming, Recursion",
+    "description": "<p>Please solve <b>Regular Expression Matching</b>.</p><p><a href=\"https://leetcode.com/problems/regular-expression-matching\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Regular Expression Matching\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Regular Expression Matching\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Regular Expression Matching\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-11",
+    "platform": "LeetCode",
+    "title": "Container With Most Water",
+    "difficulty": "Medium",
+    "topic": "Array, Two Pointers, Greedy",
+    "description": "<p>Please solve <b>Container With Most Water</b>.</p><p><a href=\"https://leetcode.com/problems/container-with-most-water\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Container With Most Water\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Container With Most Water\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Container With Most Water\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-12",
+    "platform": "LeetCode",
+    "title": "Integer to Roman",
+    "difficulty": "Medium",
+    "topic": "Hash Table, Math, String",
+    "description": "<p>Please solve <b>Integer to Roman</b>.</p><p><a href=\"https://leetcode.com/problems/integer-to-roman\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Integer to Roman\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Integer to Roman\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Integer to Roman\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-13",
+    "platform": "LeetCode",
+    "title": "Roman to Integer",
+    "difficulty": "Easy",
+    "topic": "Hash Table, Math, String",
+    "description": "<p>Please solve <b>Roman to Integer</b>.</p><p><a href=\"https://leetcode.com/problems/roman-to-integer\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Roman to Integer\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Roman to Integer\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Roman to Integer\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-14",
+    "platform": "LeetCode",
+    "title": "Longest Common Prefix",
+    "difficulty": "Easy",
+    "topic": "Array, String, Trie",
+    "description": "<p>Please solve <b>Longest Common Prefix</b>.</p><p><a href=\"https://leetcode.com/problems/longest-common-prefix\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Longest Common Prefix\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Longest Common Prefix\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Longest Common Prefix\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-15",
+    "platform": "LeetCode",
+    "title": "3Sum",
+    "difficulty": "Medium",
+    "topic": "Array, Two Pointers, Sorting",
+    "description": "<p>Please solve <b>3Sum</b>.</p><p><a href=\"https://leetcode.com/problems/3sum\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement 3Sum\n    pass\n",
+      "javascript": "function solve() {\n    // Implement 3Sum\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement 3Sum\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-16",
+    "platform": "LeetCode",
+    "title": "3Sum Closest",
+    "difficulty": "Medium",
+    "topic": "Array, Two Pointers, Sorting",
+    "description": "<p>Please solve <b>3Sum Closest</b>.</p><p><a href=\"https://leetcode.com/problems/3sum-closest\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement 3Sum Closest\n    pass\n",
+      "javascript": "function solve() {\n    // Implement 3Sum Closest\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement 3Sum Closest\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-17",
+    "platform": "LeetCode",
+    "title": "Letter Combinations of a Phone Number",
+    "difficulty": "Medium",
+    "topic": "Hash Table, String, Backtracking",
+    "description": "<p>Please solve <b>Letter Combinations of a Phone Number</b>.</p><p><a href=\"https://leetcode.com/problems/letter-combinations-of-a-phone-number\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Letter Combinations of a Phone Number\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Letter Combinations of a Phone Number\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Letter Combinations of a Phone Number\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-18",
+    "platform": "LeetCode",
+    "title": "4Sum",
+    "difficulty": "Medium",
+    "topic": "Array, Two Pointers, Sorting",
+    "description": "<p>Please solve <b>4Sum</b>.</p><p><a href=\"https://leetcode.com/problems/4sum\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement 4Sum\n    pass\n",
+      "javascript": "function solve() {\n    // Implement 4Sum\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement 4Sum\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-19",
+    "platform": "LeetCode",
+    "title": "Remove Nth Node From End of List",
+    "difficulty": "Medium",
+    "topic": "Linked List, Two Pointers",
+    "description": "<p>Please solve <b>Remove Nth Node From End of List</b>.</p><p><a href=\"https://leetcode.com/problems/remove-nth-node-from-end-of-list\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Remove Nth Node From End of List\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Remove Nth Node From End of List\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Remove Nth Node From End of List\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-21",
+    "platform": "LeetCode",
+    "title": "Merge Two Sorted Lists",
+    "difficulty": "Easy",
+    "topic": "Linked List, Recursion",
+    "description": "<p>Please solve <b>Merge Two Sorted Lists</b>.</p><p><a href=\"https://leetcode.com/problems/merge-two-sorted-lists\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Merge Two Sorted Lists\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Merge Two Sorted Lists\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Merge Two Sorted Lists\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-22",
+    "platform": "LeetCode",
+    "title": "Generate Parentheses",
+    "difficulty": "Medium",
+    "topic": "String, Dynamic Programming, Backtracking, Bracket Sequences",
+    "description": "<p>Please solve <b>Generate Parentheses</b>.</p><p><a href=\"https://leetcode.com/problems/generate-parentheses\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Generate Parentheses\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Generate Parentheses\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Generate Parentheses\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-23",
+    "platform": "LeetCode",
+    "title": "Merge k Sorted Lists",
+    "difficulty": "Hard",
+    "topic": "Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort, Tournament Sort",
+    "description": "<p>Please solve <b>Merge k Sorted Lists</b>.</p><p><a href=\"https://leetcode.com/problems/merge-k-sorted-lists\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Merge k Sorted Lists\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Merge k Sorted Lists\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Merge k Sorted Lists\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-24",
+    "platform": "LeetCode",
+    "title": "Swap Nodes in Pairs",
+    "difficulty": "Medium",
+    "topic": "Linked List, Recursion",
+    "description": "<p>Please solve <b>Swap Nodes in Pairs</b>.</p><p><a href=\"https://leetcode.com/problems/swap-nodes-in-pairs\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Swap Nodes in Pairs\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Swap Nodes in Pairs\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Swap Nodes in Pairs\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-25",
+    "platform": "LeetCode",
+    "title": "Reverse Nodes in k-Group",
+    "difficulty": "Hard",
+    "topic": "Linked List, Recursion",
+    "description": "<p>Please solve <b>Reverse Nodes in k-Group</b>.</p><p><a href=\"https://leetcode.com/problems/reverse-nodes-in-k-group\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Reverse Nodes in k-Group\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Reverse Nodes in k-Group\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Reverse Nodes in k-Group\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-26",
+    "platform": "LeetCode",
+    "title": "Remove Duplicates from Sorted Array",
+    "difficulty": "Easy",
+    "topic": "Array, Two Pointers",
+    "description": "<p>Please solve <b>Remove Duplicates from Sorted Array</b>.</p><p><a href=\"https://leetcode.com/problems/remove-duplicates-from-sorted-array\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Remove Duplicates from Sorted Array\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Remove Duplicates from Sorted Array\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Remove Duplicates from Sorted Array\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-27",
+    "platform": "LeetCode",
+    "title": "Remove Element",
+    "difficulty": "Easy",
+    "topic": "Array, Two Pointers",
+    "description": "<p>Please solve <b>Remove Element</b>.</p><p><a href=\"https://leetcode.com/problems/remove-element\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Remove Element\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Remove Element\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Remove Element\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-28",
+    "platform": "LeetCode",
+    "title": "Find the Index of the First Occurrence in a String",
+    "difficulty": "Easy",
+    "topic": "Two Pointers, String, String Matching, Z Algorithm, Knuth–Morris–Pratt Algorithm, Boyer–Moore String-Search Algorithm",
+    "description": "<p>Please solve <b>Find the Index of the First Occurrence in a String</b>.</p><p><a href=\"https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Find the Index of the First Occurrence in a String\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Find the Index of the First Occurrence in a String\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Find the Index of the First Occurrence in a String\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-29",
+    "platform": "LeetCode",
+    "title": "Divide Two Integers",
+    "difficulty": "Medium",
+    "topic": "Math, Bit Manipulation",
+    "description": "<p>Please solve <b>Divide Two Integers</b>.</p><p><a href=\"https://leetcode.com/problems/divide-two-integers\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Divide Two Integers\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Divide Two Integers\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Divide Two Integers\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-30",
+    "platform": "LeetCode",
+    "title": "Substring with Concatenation of All Words",
+    "difficulty": "Hard",
+    "topic": "Hash Table, String, Sliding Window",
+    "description": "<p>Please solve <b>Substring with Concatenation of All Words</b>.</p><p><a href=\"https://leetcode.com/problems/substring-with-concatenation-of-all-words\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Substring with Concatenation of All Words\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Substring with Concatenation of All Words\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Substring with Concatenation of All Words\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-31",
+    "platform": "LeetCode",
+    "title": "Next Permutation",
+    "difficulty": "Medium",
+    "topic": "Array, Two Pointers",
+    "description": "<p>Please solve <b>Next Permutation</b>.</p><p><a href=\"https://leetcode.com/problems/next-permutation\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Next Permutation\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Next Permutation\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Next Permutation\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-32",
+    "platform": "LeetCode",
+    "title": "Longest Valid Parentheses",
+    "difficulty": "Hard",
+    "topic": "String, Dynamic Programming, Stack, Bracket Sequences",
+    "description": "<p>Please solve <b>Longest Valid Parentheses</b>.</p><p><a href=\"https://leetcode.com/problems/longest-valid-parentheses\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Longest Valid Parentheses\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Longest Valid Parentheses\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Longest Valid Parentheses\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-33",
+    "platform": "LeetCode",
+    "title": "Search in Rotated Sorted Array",
+    "difficulty": "Medium",
+    "topic": "Array, Binary Search",
+    "description": "<p>Please solve <b>Search in Rotated Sorted Array</b>.</p><p><a href=\"https://leetcode.com/problems/search-in-rotated-sorted-array\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Search in Rotated Sorted Array\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Search in Rotated Sorted Array\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Search in Rotated Sorted Array\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-34",
+    "platform": "LeetCode",
+    "title": "Find First and Last Position of Element in Sorted Array",
+    "difficulty": "Medium",
+    "topic": "Array, Binary Search",
+    "description": "<p>Please solve <b>Find First and Last Position of Element in Sorted Array</b>.</p><p><a href=\"https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Find First and Last Position of Element in Sorted Array\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Find First and Last Position of Element in Sorted Array\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Find First and Last Position of Element in Sorted Array\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-35",
+    "platform": "LeetCode",
+    "title": "Search Insert Position",
+    "difficulty": "Easy",
+    "topic": "Array, Binary Search",
+    "description": "<p>Please solve <b>Search Insert Position</b>.</p><p><a href=\"https://leetcode.com/problems/search-insert-position\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Search Insert Position\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Search Insert Position\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Search Insert Position\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-36",
+    "platform": "LeetCode",
+    "title": "Valid Sudoku",
+    "difficulty": "Medium",
+    "topic": "Array, Hash Table, Matrix",
+    "description": "<p>Please solve <b>Valid Sudoku</b>.</p><p><a href=\"https://leetcode.com/problems/valid-sudoku\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Valid Sudoku\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Valid Sudoku\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Valid Sudoku\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-37",
+    "platform": "LeetCode",
+    "title": "Sudoku Solver",
+    "difficulty": "Hard",
+    "topic": "Array, Hash Table, Backtracking, Matrix, Algorithm X, Dancing Links",
+    "description": "<p>Please solve <b>Sudoku Solver</b>.</p><p><a href=\"https://leetcode.com/problems/sudoku-solver\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Sudoku Solver\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Sudoku Solver\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Sudoku Solver\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-38",
+    "platform": "LeetCode",
+    "title": "Count and Say",
+    "difficulty": "Medium",
+    "topic": "String",
+    "description": "<p>Please solve <b>Count and Say</b>.</p><p><a href=\"https://leetcode.com/problems/count-and-say\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Count and Say\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Count and Say\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Count and Say\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-39",
+    "platform": "LeetCode",
+    "title": "Combination Sum",
+    "difficulty": "Medium",
+    "topic": "Array, Backtracking",
+    "description": "<p>Please solve <b>Combination Sum</b>.</p><p><a href=\"https://leetcode.com/problems/combination-sum\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Combination Sum\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Combination Sum\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Combination Sum\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-40",
+    "platform": "LeetCode",
+    "title": "Combination Sum II",
+    "difficulty": "Medium",
+    "topic": "Array, Backtracking",
+    "description": "<p>Please solve <b>Combination Sum II</b>.</p><p><a href=\"https://leetcode.com/problems/combination-sum-ii\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Combination Sum II\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Combination Sum II\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Combination Sum II\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-41",
+    "platform": "LeetCode",
+    "title": "First Missing Positive",
+    "difficulty": "Hard",
+    "topic": "Array, Hash Table",
+    "description": "<p>Please solve <b>First Missing Positive</b>.</p><p><a href=\"https://leetcode.com/problems/first-missing-positive\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement First Missing Positive\n    pass\n",
+      "javascript": "function solve() {\n    // Implement First Missing Positive\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement First Missing Positive\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-42",
+    "platform": "LeetCode",
+    "title": "Trapping Rain Water",
+    "difficulty": "Hard",
+    "topic": "Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack",
+    "description": "<p>Please solve <b>Trapping Rain Water</b>.</p><p><a href=\"https://leetcode.com/problems/trapping-rain-water\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Trapping Rain Water\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Trapping Rain Water\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Trapping Rain Water\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-43",
+    "platform": "LeetCode",
+    "title": "Multiply Strings",
+    "difficulty": "Medium",
+    "topic": "Math, String, Simulation",
+    "description": "<p>Please solve <b>Multiply Strings</b>.</p><p><a href=\"https://leetcode.com/problems/multiply-strings\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Multiply Strings\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Multiply Strings\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Multiply Strings\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-44",
+    "platform": "LeetCode",
+    "title": "Wildcard Matching",
+    "difficulty": "Hard",
+    "topic": "String, Dynamic Programming, Greedy, Recursion",
+    "description": "<p>Please solve <b>Wildcard Matching</b>.</p><p><a href=\"https://leetcode.com/problems/wildcard-matching\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Wildcard Matching\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Wildcard Matching\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Wildcard Matching\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-45",
+    "platform": "LeetCode",
+    "title": "Jump Game II",
+    "difficulty": "Medium",
+    "topic": "Array, Dynamic Programming, Greedy",
+    "description": "<p>Please solve <b>Jump Game II</b>.</p><p><a href=\"https://leetcode.com/problems/jump-game-ii\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Jump Game II\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Jump Game II\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Jump Game II\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-46",
+    "platform": "LeetCode",
+    "title": "Permutations",
+    "difficulty": "Medium",
+    "topic": "Array, Backtracking",
+    "description": "<p>Please solve <b>Permutations</b>.</p><p><a href=\"https://leetcode.com/problems/permutations\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Permutations\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Permutations\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Permutations\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-47",
+    "platform": "LeetCode",
+    "title": "Permutations II",
+    "difficulty": "Medium",
+    "topic": "Array, Backtracking, Sorting",
+    "description": "<p>Please solve <b>Permutations II</b>.</p><p><a href=\"https://leetcode.com/problems/permutations-ii\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Permutations II\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Permutations II\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Permutations II\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-48",
+    "platform": "LeetCode",
+    "title": "Rotate Image",
+    "difficulty": "Medium",
+    "topic": "Array, Math, Matrix",
+    "description": "<p>Please solve <b>Rotate Image</b>.</p><p><a href=\"https://leetcode.com/problems/rotate-image\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Rotate Image\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Rotate Image\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Rotate Image\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-49",
+    "platform": "LeetCode",
+    "title": "Group Anagrams",
+    "difficulty": "Medium",
+    "topic": "Array, Hash Table, String, Sorting",
+    "description": "<p>Please solve <b>Group Anagrams</b>.</p><p><a href=\"https://leetcode.com/problems/group-anagrams\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Group Anagrams\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Group Anagrams\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Group Anagrams\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-50",
+    "platform": "LeetCode",
+    "title": "Pow(x, n)",
+    "difficulty": "Medium",
+    "topic": "Math, Recursion",
+    "description": "<p>Please solve <b>Pow(x, n)</b>.</p><p><a href=\"https://leetcode.com/problems/powx-n\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Pow(x, n)\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Pow(x, n)\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Pow(x, n)\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-51",
+    "platform": "LeetCode",
+    "title": "N-Queens",
+    "difficulty": "Hard",
+    "topic": "Array, Backtracking, Algorithm X",
+    "description": "<p>Please solve <b>N-Queens</b>.</p><p><a href=\"https://leetcode.com/problems/n-queens\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement N-Queens\n    pass\n",
+      "javascript": "function solve() {\n    // Implement N-Queens\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement N-Queens\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-52",
+    "platform": "LeetCode",
+    "title": "N-Queens II",
+    "difficulty": "Hard",
+    "topic": "Backtracking, Algorithm X",
+    "description": "<p>Please solve <b>N-Queens II</b>.</p><p><a href=\"https://leetcode.com/problems/n-queens-ii\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement N-Queens II\n    pass\n",
+      "javascript": "function solve() {\n    // Implement N-Queens II\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement N-Queens II\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-53",
+    "platform": "LeetCode",
+    "title": "Maximum Subarray",
+    "difficulty": "Medium",
+    "topic": "Array, Divide and Conquer, Dynamic Programming",
+    "description": "<p>Please solve <b>Maximum Subarray</b>.</p><p><a href=\"https://leetcode.com/problems/maximum-subarray\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Maximum Subarray\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Maximum Subarray\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Maximum Subarray\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-54",
+    "platform": "LeetCode",
+    "title": "Spiral Matrix",
+    "difficulty": "Medium",
+    "topic": "Array, Matrix, Simulation",
+    "description": "<p>Please solve <b>Spiral Matrix</b>.</p><p><a href=\"https://leetcode.com/problems/spiral-matrix\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Spiral Matrix\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Spiral Matrix\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Spiral Matrix\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-55",
+    "platform": "LeetCode",
+    "title": "Jump Game",
+    "difficulty": "Medium",
+    "topic": "Array, Dynamic Programming, Greedy",
+    "description": "<p>Please solve <b>Jump Game</b>.</p><p><a href=\"https://leetcode.com/problems/jump-game\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Jump Game\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Jump Game\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Jump Game\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-56",
+    "platform": "LeetCode",
+    "title": "Merge Intervals",
+    "difficulty": "Medium",
+    "topic": "Array, Sorting, Quicksort",
+    "description": "<p>Please solve <b>Merge Intervals</b>.</p><p><a href=\"https://leetcode.com/problems/merge-intervals\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Merge Intervals\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Merge Intervals\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Merge Intervals\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-57",
+    "platform": "LeetCode",
+    "title": "Insert Interval",
+    "difficulty": "Medium",
+    "topic": "Array",
+    "description": "<p>Please solve <b>Insert Interval</b>.</p><p><a href=\"https://leetcode.com/problems/insert-interval\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Insert Interval\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Insert Interval\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Insert Interval\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-58",
+    "platform": "LeetCode",
+    "title": "Length of Last Word",
+    "difficulty": "Easy",
+    "topic": "String",
+    "description": "<p>Please solve <b>Length of Last Word</b>.</p><p><a href=\"https://leetcode.com/problems/length-of-last-word\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Length of Last Word\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Length of Last Word\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Length of Last Word\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-59",
+    "platform": "LeetCode",
+    "title": "Spiral Matrix II",
+    "difficulty": "Medium",
+    "topic": "Array, Matrix, Simulation",
+    "description": "<p>Please solve <b>Spiral Matrix II</b>.</p><p><a href=\"https://leetcode.com/problems/spiral-matrix-ii\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Spiral Matrix II\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Spiral Matrix II\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Spiral Matrix II\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-60",
+    "platform": "LeetCode",
+    "title": "Permutation Sequence",
+    "difficulty": "Hard",
+    "topic": "Math, Recursion",
+    "description": "<p>Please solve <b>Permutation Sequence</b>.</p><p><a href=\"https://leetcode.com/problems/permutation-sequence\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Permutation Sequence\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Permutation Sequence\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Permutation Sequence\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-61",
+    "platform": "LeetCode",
+    "title": "Rotate List",
+    "difficulty": "Medium",
+    "topic": "Linked List, Two Pointers",
+    "description": "<p>Please solve <b>Rotate List</b>.</p><p><a href=\"https://leetcode.com/problems/rotate-list\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Rotate List\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Rotate List\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Rotate List\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-62",
+    "platform": "LeetCode",
+    "title": "Unique Paths",
+    "difficulty": "Medium",
+    "topic": "Math, Dynamic Programming, Combinatorics",
+    "description": "<p>Please solve <b>Unique Paths</b>.</p><p><a href=\"https://leetcode.com/problems/unique-paths\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Unique Paths\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Unique Paths\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Unique Paths\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-63",
+    "platform": "LeetCode",
+    "title": "Unique Paths II",
+    "difficulty": "Medium",
+    "topic": "Array, Dynamic Programming, Matrix",
+    "description": "<p>Please solve <b>Unique Paths II</b>.</p><p><a href=\"https://leetcode.com/problems/unique-paths-ii\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Unique Paths II\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Unique Paths II\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Unique Paths II\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-64",
+    "platform": "LeetCode",
+    "title": "Minimum Path Sum",
+    "difficulty": "Medium",
+    "topic": "Array, Dynamic Programming, Matrix",
+    "description": "<p>Please solve <b>Minimum Path Sum</b>.</p><p><a href=\"https://leetcode.com/problems/minimum-path-sum\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Minimum Path Sum\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Minimum Path Sum\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Minimum Path Sum\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-65",
+    "platform": "LeetCode",
+    "title": "Valid Number",
+    "difficulty": "Hard",
+    "topic": "String",
+    "description": "<p>Please solve <b>Valid Number</b>.</p><p><a href=\"https://leetcode.com/problems/valid-number\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Valid Number\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Valid Number\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Valid Number\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-66",
+    "platform": "LeetCode",
+    "title": "Plus One",
+    "difficulty": "Easy",
+    "topic": "Array, Math",
+    "description": "<p>Please solve <b>Plus One</b>.</p><p><a href=\"https://leetcode.com/problems/plus-one\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Plus One\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Plus One\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Plus One\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-67",
+    "platform": "LeetCode",
+    "title": "Add Binary",
+    "difficulty": "Easy",
+    "topic": "Math, String, Bit Manipulation, Simulation",
+    "description": "<p>Please solve <b>Add Binary</b>.</p><p><a href=\"https://leetcode.com/problems/add-binary\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Add Binary\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Add Binary\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Add Binary\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-68",
+    "platform": "LeetCode",
+    "title": "Text Justification",
+    "difficulty": "Hard",
+    "topic": "Array, String, Simulation",
+    "description": "<p>Please solve <b>Text Justification</b>.</p><p><a href=\"https://leetcode.com/problems/text-justification\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Text Justification\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Text Justification\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Text Justification\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-69",
+    "platform": "LeetCode",
+    "title": "Sqrt(x)",
+    "difficulty": "Easy",
+    "topic": "Math, Binary Search, Newton's Method",
+    "description": "<p>Please solve <b>Sqrt(x)</b>.</p><p><a href=\"https://leetcode.com/problems/sqrtx\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Sqrt(x)\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Sqrt(x)\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Sqrt(x)\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-70",
+    "platform": "LeetCode",
+    "title": "Climbing Stairs",
+    "difficulty": "Easy",
+    "topic": "Math, Dynamic Programming, Memoization",
+    "description": "<p>Please solve <b>Climbing Stairs</b>.</p><p><a href=\"https://leetcode.com/problems/climbing-stairs\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Climbing Stairs\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Climbing Stairs\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Climbing Stairs\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-71",
+    "platform": "LeetCode",
+    "title": "Simplify Path",
+    "difficulty": "Medium",
+    "topic": "String, Stack",
+    "description": "<p>Please solve <b>Simplify Path</b>.</p><p><a href=\"https://leetcode.com/problems/simplify-path\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Simplify Path\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Simplify Path\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Simplify Path\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-72",
+    "platform": "LeetCode",
+    "title": "Edit Distance",
+    "difficulty": "Medium",
+    "topic": "String, Dynamic Programming",
+    "description": "<p>Please solve <b>Edit Distance</b>.</p><p><a href=\"https://leetcode.com/problems/edit-distance\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Edit Distance\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Edit Distance\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Edit Distance\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-73",
+    "platform": "LeetCode",
+    "title": "Set Matrix Zeroes",
+    "difficulty": "Medium",
+    "topic": "Array, Hash Table, Matrix",
+    "description": "<p>Please solve <b>Set Matrix Zeroes</b>.</p><p><a href=\"https://leetcode.com/problems/set-matrix-zeroes\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Set Matrix Zeroes\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Set Matrix Zeroes\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Set Matrix Zeroes\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-74",
+    "platform": "LeetCode",
+    "title": "Search a 2D Matrix",
+    "difficulty": "Medium",
+    "topic": "Array, Binary Search, Matrix",
+    "description": "<p>Please solve <b>Search a 2D Matrix</b>.</p><p><a href=\"https://leetcode.com/problems/search-a-2d-matrix\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Search a 2D Matrix\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Search a 2D Matrix\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Search a 2D Matrix\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-75",
+    "platform": "LeetCode",
+    "title": "Sort Colors",
+    "difficulty": "Medium",
+    "topic": "Array, Two Pointers, Sorting, Quicksort, Bubble Sort",
+    "description": "<p>Please solve <b>Sort Colors</b>.</p><p><a href=\"https://leetcode.com/problems/sort-colors\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Sort Colors\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Sort Colors\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Sort Colors\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-76",
+    "platform": "LeetCode",
+    "title": "Minimum Window Substring",
+    "difficulty": "Hard",
+    "topic": "Hash Table, String, Sliding Window",
+    "description": "<p>Please solve <b>Minimum Window Substring</b>.</p><p><a href=\"https://leetcode.com/problems/minimum-window-substring\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Minimum Window Substring\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Minimum Window Substring\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Minimum Window Substring\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-77",
+    "platform": "LeetCode",
+    "title": "Combinations",
+    "difficulty": "Medium",
+    "topic": "Backtracking",
+    "description": "<p>Please solve <b>Combinations</b>.</p><p><a href=\"https://leetcode.com/problems/combinations\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Combinations\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Combinations\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Combinations\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-78",
+    "platform": "LeetCode",
+    "title": "Subsets",
+    "difficulty": "Medium",
+    "topic": "Array, Backtracking, Bit Manipulation",
+    "description": "<p>Please solve <b>Subsets</b>.</p><p><a href=\"https://leetcode.com/problems/subsets\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Subsets\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Subsets\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Subsets\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-79",
+    "platform": "LeetCode",
+    "title": "Word Search",
+    "difficulty": "Medium",
+    "topic": "Array, String, Backtracking, Depth-First Search, Matrix",
+    "description": "<p>Please solve <b>Word Search</b>.</p><p><a href=\"https://leetcode.com/problems/word-search\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Word Search\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Word Search\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Word Search\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-80",
+    "platform": "LeetCode",
+    "title": "Remove Duplicates from Sorted Array II",
+    "difficulty": "Medium",
+    "topic": "Array, Two Pointers",
+    "description": "<p>Please solve <b>Remove Duplicates from Sorted Array II</b>.</p><p><a href=\"https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Remove Duplicates from Sorted Array II\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Remove Duplicates from Sorted Array II\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Remove Duplicates from Sorted Array II\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-81",
+    "platform": "LeetCode",
+    "title": "Search in Rotated Sorted Array II",
+    "difficulty": "Medium",
+    "topic": "Array, Binary Search",
+    "description": "<p>Please solve <b>Search in Rotated Sorted Array II</b>.</p><p><a href=\"https://leetcode.com/problems/search-in-rotated-sorted-array-ii\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Search in Rotated Sorted Array II\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Search in Rotated Sorted Array II\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Search in Rotated Sorted Array II\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-82",
+    "platform": "LeetCode",
+    "title": "Remove Duplicates from Sorted List II",
+    "difficulty": "Medium",
+    "topic": "Linked List, Two Pointers",
+    "description": "<p>Please solve <b>Remove Duplicates from Sorted List II</b>.</p><p><a href=\"https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Remove Duplicates from Sorted List II\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Remove Duplicates from Sorted List II\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Remove Duplicates from Sorted List II\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-83",
+    "platform": "LeetCode",
+    "title": "Remove Duplicates from Sorted List",
+    "difficulty": "Easy",
+    "topic": "Linked List",
+    "description": "<p>Please solve <b>Remove Duplicates from Sorted List</b>.</p><p><a href=\"https://leetcode.com/problems/remove-duplicates-from-sorted-list\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Remove Duplicates from Sorted List\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Remove Duplicates from Sorted List\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Remove Duplicates from Sorted List\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-84",
+    "platform": "LeetCode",
+    "title": "Largest Rectangle in Histogram",
+    "difficulty": "Hard",
+    "topic": "Array, Stack, Monotonic Stack, Range Minimum/Maximum Query",
+    "description": "<p>Please solve <b>Largest Rectangle in Histogram</b>.</p><p><a href=\"https://leetcode.com/problems/largest-rectangle-in-histogram\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Largest Rectangle in Histogram\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Largest Rectangle in Histogram\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Largest Rectangle in Histogram\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-85",
+    "platform": "LeetCode",
+    "title": "Maximal Rectangle",
+    "difficulty": "Hard",
+    "topic": "Array, Dynamic Programming, Stack, Matrix, Monotonic Stack",
+    "description": "<p>Please solve <b>Maximal Rectangle</b>.</p><p><a href=\"https://leetcode.com/problems/maximal-rectangle\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Maximal Rectangle\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Maximal Rectangle\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Maximal Rectangle\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-86",
+    "platform": "LeetCode",
+    "title": "Partition List",
+    "difficulty": "Medium",
+    "topic": "Linked List, Two Pointers",
+    "description": "<p>Please solve <b>Partition List</b>.</p><p><a href=\"https://leetcode.com/problems/partition-list\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Partition List\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Partition List\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Partition List\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-87",
+    "platform": "LeetCode",
+    "title": "Scramble String",
+    "difficulty": "Hard",
+    "topic": "String, Dynamic Programming",
+    "description": "<p>Please solve <b>Scramble String</b>.</p><p><a href=\"https://leetcode.com/problems/scramble-string\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Scramble String\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Scramble String\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Scramble String\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-88",
+    "platform": "LeetCode",
+    "title": "Merge Sorted Array",
+    "difficulty": "Easy",
+    "topic": "Array, Two Pointers, Sorting",
+    "description": "<p>Please solve <b>Merge Sorted Array</b>.</p><p><a href=\"https://leetcode.com/problems/merge-sorted-array\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Merge Sorted Array\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Merge Sorted Array\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Merge Sorted Array\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-89",
+    "platform": "LeetCode",
+    "title": "Gray Code",
+    "difficulty": "Medium",
+    "topic": "Math, Backtracking, Bit Manipulation",
+    "description": "<p>Please solve <b>Gray Code</b>.</p><p><a href=\"https://leetcode.com/problems/gray-code\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Gray Code\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Gray Code\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Gray Code\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-90",
+    "platform": "LeetCode",
+    "title": "Subsets II",
+    "difficulty": "Medium",
+    "topic": "Array, Backtracking, Bit Manipulation",
+    "description": "<p>Please solve <b>Subsets II</b>.</p><p><a href=\"https://leetcode.com/problems/subsets-ii\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Subsets II\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Subsets II\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Subsets II\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-91",
+    "platform": "LeetCode",
+    "title": "Decode Ways",
+    "difficulty": "Medium",
+    "topic": "String, Dynamic Programming",
+    "description": "<p>Please solve <b>Decode Ways</b>.</p><p><a href=\"https://leetcode.com/problems/decode-ways\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Decode Ways\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Decode Ways\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Decode Ways\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-92",
+    "platform": "LeetCode",
+    "title": "Reverse Linked List II",
+    "difficulty": "Medium",
+    "topic": "Linked List",
+    "description": "<p>Please solve <b>Reverse Linked List II</b>.</p><p><a href=\"https://leetcode.com/problems/reverse-linked-list-ii\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Reverse Linked List II\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Reverse Linked List II\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Reverse Linked List II\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-93",
+    "platform": "LeetCode",
+    "title": "Restore IP Addresses",
+    "difficulty": "Medium",
+    "topic": "String, Backtracking",
+    "description": "<p>Please solve <b>Restore IP Addresses</b>.</p><p><a href=\"https://leetcode.com/problems/restore-ip-addresses\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Restore IP Addresses\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Restore IP Addresses\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Restore IP Addresses\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-94",
+    "platform": "LeetCode",
+    "title": "Binary Tree Inorder Traversal",
+    "difficulty": "Easy",
+    "topic": "Stack, Tree, Depth-First Search, Binary Tree",
+    "description": "<p>Please solve <b>Binary Tree Inorder Traversal</b>.</p><p><a href=\"https://leetcode.com/problems/binary-tree-inorder-traversal\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Binary Tree Inorder Traversal\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Binary Tree Inorder Traversal\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Binary Tree Inorder Traversal\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-95",
+    "platform": "LeetCode",
+    "title": "Unique Binary Search Trees II",
+    "difficulty": "Medium",
+    "topic": "Dynamic Programming, Backtracking, Tree, Binary Search Tree, Binary Tree",
+    "description": "<p>Please solve <b>Unique Binary Search Trees II</b>.</p><p><a href=\"https://leetcode.com/problems/unique-binary-search-trees-ii\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Unique Binary Search Trees II\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Unique Binary Search Trees II\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Unique Binary Search Trees II\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-96",
+    "platform": "LeetCode",
+    "title": "Unique Binary Search Trees",
+    "difficulty": "Medium",
+    "topic": "Math, Dynamic Programming, Tree, Binary Search Tree, Binary Tree",
+    "description": "<p>Please solve <b>Unique Binary Search Trees</b>.</p><p><a href=\"https://leetcode.com/problems/unique-binary-search-trees\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Unique Binary Search Trees\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Unique Binary Search Trees\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Unique Binary Search Trees\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-97",
+    "platform": "LeetCode",
+    "title": "Interleaving String",
+    "difficulty": "Medium",
+    "topic": "String, Dynamic Programming",
+    "description": "<p>Please solve <b>Interleaving String</b>.</p><p><a href=\"https://leetcode.com/problems/interleaving-string\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Interleaving String\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Interleaving String\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Interleaving String\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-98",
+    "platform": "LeetCode",
+    "title": "Validate Binary Search Tree",
+    "difficulty": "Medium",
+    "topic": "Tree, Depth-First Search, Binary Search Tree, Binary Tree",
+    "description": "<p>Please solve <b>Validate Binary Search Tree</b>.</p><p><a href=\"https://leetcode.com/problems/validate-binary-search-tree\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Validate Binary Search Tree\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Validate Binary Search Tree\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Validate Binary Search Tree\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-99",
+    "platform": "LeetCode",
+    "title": "Recover Binary Search Tree",
+    "difficulty": "Medium",
+    "topic": "Tree, Depth-First Search, Binary Search Tree, Binary Tree",
+    "description": "<p>Please solve <b>Recover Binary Search Tree</b>.</p><p><a href=\"https://leetcode.com/problems/recover-binary-search-tree\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Recover Binary Search Tree\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Recover Binary Search Tree\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Recover Binary Search Tree\n}\n"
+    },
+    "testCases": []
+  },
+  {
+    "id": "lc-100",
+    "platform": "LeetCode",
+    "title": "Same Tree",
+    "difficulty": "Easy",
+    "topic": "Tree, Depth-First Search, Breadth-First Search, Binary Tree",
+    "description": "<p>Please solve <b>Same Tree</b>.</p><p><a href=\"https://leetcode.com/problems/same-tree\" target=\"_blank\">View on LeetCode</a></p>",
+    "starterCode": {
+      "python": "def solve():\n    # Implement Same Tree\n    pass\n",
+      "javascript": "function solve() {\n    // Implement Same Tree\n}\n",
+      "cpp": "#include <iostream>\nusing namespace std;\nvoid solve() {\n    // Implement Same Tree\n}\n"
+    },
+    "testCases": []
+  }
+]

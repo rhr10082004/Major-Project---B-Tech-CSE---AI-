@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { API_BASE_URL } from '../api';
+import offlineProblems from '../data/leetcode_problems.json';
 
 export const LeetCodeDB: React.FC = () => {
   const [problems, setProblems] = useState<any[]>([]);
@@ -22,7 +23,24 @@ export const LeetCodeDB: React.FC = () => {
       });
       setProblems(res.data.problems);
     } catch (err) {
-      console.error(err);
+      const normalizedSearch = search.toLowerCase();
+      setProblems(offlineProblems
+        .map((p) => ({
+          problemId: Number(p.id.replace('lc-', '')),
+          title: p.title,
+          slug: p.title.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
+          difficulty: p.difficulty,
+          topics: [p.topic],
+          description: p.description,
+          starterCode: p.starterCode,
+          testCases: p.testCases,
+          examples: p.testCases?.slice(0, 2).map((testCase) => ({
+            input: testCase.input,
+            output: testCase.expectedOutput
+          }))
+        }))
+        .filter((problem) => !difficulty || problem.difficulty === difficulty)
+        .filter((problem) => !normalizedSearch || problem.title.toLowerCase().includes(normalizedSearch)));
     }
     setLoading(false);
   };
