@@ -14,7 +14,7 @@
 
 ### 🌐 Live Website
 
-[Open AI Study Strategist](https://major-project-b-tech-cse-505hsivap-major-project-b-tech-cse-ai.vercel.app)
+[Open AI Study Strategist](https://major-project-b-tech-cse-ai.vercel.app)
 
 ### 📦 GitHub Repository
 
