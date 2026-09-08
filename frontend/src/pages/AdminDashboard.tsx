@@ -20,7 +20,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ user, onLogout }
   const loadAdminMetrics = async () => {
     try {
       const res = await studyApi.getAdminMetrics();
-      if (res.data) setMetrics(res.data);
+      if (res.data?.logs && Array.isArray(res.data.logs)) setMetrics(res.data);
     } catch {
       setMetrics({
         users_total: 1246,

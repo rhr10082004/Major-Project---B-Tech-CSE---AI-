@@ -10,6 +10,7 @@ import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGri
 import { User, Lecture, Flashcard, MCQ, YoutubeVideo, LeetCodeProfile, StudyPlan } from '../types';
 import { studyApi } from '../api';
 import { useTheme } from '../context/ThemeContext';
+import offlineProblems from '../data/leetcode_problems.json';
 
 const publicVideoCatalog: YoutubeVideo[] = [
   { videoId: 'kCc8FmRoS0j', title: 'Deep Learning and Transformers', channel: 'Stanford Online', duration: '48:15', views: '240K views', description: 'Self-attention, transformers, and modern machine learning.' },
@@ -180,19 +181,32 @@ export const StudentDashboard: React.FC<StudentDashboardProps> = ({ user, onLogo
   const loadCodingProblems = async () => {
     try {
       const res = await studyApi.getCodingProblems();
-      if (res.data?.problems?.length) {
+      if (Array.isArray(res.data?.problems) && res.data.problems.length) {
         setCodingProblems(res.data.problems);
         selectProblem(res.data.problems[0], 'python');
+      } else {
+        throw new Error('Coding problem bank is empty');
       }
     } catch (err) {
-      const demoProb: CodingProblem = {
-        id: 'lc-1', platform: 'LeetCode', title: 'Two Sum (Optimal O(N) HashMap Mapping) 👑', difficulty: 'Easy', topic: 'Arrays & Hash Tables 💎', acceptanceRate: '82.4%',
-        description: 'Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target directly within our unified learning platform! 🚀 ✨',
-        examples: [{ input: 'nums = [2,7,11,15], target = 9', output: '[0,1]', explanation: 'Because nums[0] + nums[1] == 9.' }],
-        constraints: ['2 <= nums.length <= 10^4'], starterCode: { python: 'def twoSum(nums: list[int], target: int) -> list[int]:\n    seen = {}\n    for i, n in enumerate(nums):\n        if target - n in seen: return [seen[target - n], i]\n        seen[n] = i\n    return []\n' }, hint: 'Use HashMap for single pass O(N).'
-      };
-      setCodingProblems([demoProb]);
-      selectProblem(demoProb, 'python');
+      const bundledProblems: CodingProblem[] = offlineProblems.map((problem) => ({
+        id: problem.id,
+        platform: 'LeetCode',
+        title: problem.title,
+        difficulty: problem.difficulty as CodingProblem['difficulty'],
+        topic: problem.topic,
+        acceptanceRate: '—',
+        description: problem.description,
+        examples: problem.testCases.slice(0, 2).map((testCase) => ({
+          input: testCase.input,
+          output: testCase.expectedOutput,
+          explanation: 'Compare your output with the expected result for this visible test case.'
+        })),
+        constraints: [],
+        starterCode: problem.starterCode,
+        hint: 'Break the problem into smaller cases and verify the expected complexity before coding.'
+      }));
+      setCodingProblems(bundledProblems);
+      if (bundledProblems.length) selectProblem(bundledProblems[0], 'python');
     }
   };
 
@@ -224,7 +238,8 @@ export const StudentDashboard: React.FC<StudentDashboardProps> = ({ user, onLogo
         isSubmit
       });
       setIsRunningCode(false);
-      if (res.data) setCodeRunResult(res.data);
+      if (res.data?.testResults?.outputLogs) setCodeRunResult(res.data);
+      else throw new Error('Coding runner returned an incomplete result');
     } catch {
       setIsRunningCode(false);
       setCodeRunResult({
