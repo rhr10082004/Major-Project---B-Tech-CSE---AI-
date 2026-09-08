@@ -10,6 +10,20 @@
 [![AI service](https://img.shields.io/badge/AI-FastAPI%20%2B%20Python-009688)](python-ai-service/)
 [![License](https://img.shields.io/badge/license-MIT-blue)](.)
 
+## 🔗 Project Links
+
+### 🌐 Live Website
+
+[Open AI Study Strategist](https://major-project-b-tech-cse-505hsivap-major-project-b-tech-cse-ai.vercel.app)
+
+### 📦 GitHub Repository
+
+[View the complete source code](https://github.com/rhr10082004/Major-Project---B-Tech-CSE---AI-)
+
+### 🧾 Latest Upload
+
+[View the latest GitHub commit](https://github.com/rhr10082004/Major-Project---B-Tech-CSE---AI-/commit/cf2cb4f39863156609fe27ebdd0dd3d0cf40f15e)
+
 ## 1. Project overview
 
 AI Study Strategist turns lectures, documents, and study material into structured learning resources. It combines summarisation, flashcards, quizzes, an AI tutor, coding practice, study planning, and role-based dashboards in one platform.
