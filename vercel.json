@@ -1,9 +1,15 @@
-{
-  "functions": {
-    "api/[...path].js": {
-      "includeFiles": [
-        "backend/**"
-      ]
-    }
-  }
+﻿{
+    "functions":  {
+                      "api/[...path].js":  {
+                                               "includeFiles":  [
+                                                                    "backend/**"
+                                                                ]
+                                           }
+                  },
+    "rewrites":  [
+                     {
+                         "destination":  "/index.html",
+                         "source":  "/((?!api/).*)"
+                     }
+                 ]
 }
