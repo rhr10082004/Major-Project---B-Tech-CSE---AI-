@@ -202,6 +202,7 @@ start-all.bat        Windows Command Prompt launcher
 ## 11. Academic attribution
 
 **Project team:** Sajid Khan, Repaka Himanshu Raj, Siddesh Surti, and Anuj N. Pandey
+
 **Project guide:** Mrs. Gayatri Devraj Naidu, Assistant Professor, Department of CSE, PIT
 
 Developed at Parul Institute of Technology, Vadodara.
