@@ -3,7 +3,7 @@
 ### AI-powered video lecture summarizer and intelligent learning platform
 
 > Academic Major Project | Parul Institute of Technology, Parul University, Vadodara
-> Department of Computer Science & Engineering | AY 2025-2026
+> Department of Computer Science & Engineering | AY 2026-2027
 
 [![Frontend](https://img.shields.io/badge/frontend-React%2019%20%2B%20Vite-61dafb)](frontend/)
 [![Backend](https://img.shields.io/badge/API-Node.js%20%2B%20Express-339933)](backend/)
